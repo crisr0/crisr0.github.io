@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+
+	<link rel="stylesheet"  href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+
+</head>
+
+
+
+<body>
+
+	<h1>Archivo: Open_layers_2.html</h1>
+
+	<div id= 'mibloquemapa' class="map"></div>
+
+
+
+<script type="text/javascript">
+
+	var mimapa = new ol.Map({
+
+		target: 'mibloquemapa',
+
+		layers: [new ol.layer.Tile({
+
+				source: new ol.source.OSM()
+
+				})],
+
+		view: new ol.View({
+
+		center: ol.proj.fromLonLat([-156.12441, 20.4263]),
+
+		zoom: 7})
+
+		});
+
+</script>
+
+</body>
+
+</html>
